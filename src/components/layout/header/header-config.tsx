@@ -2,6 +2,8 @@ import { ReactNode } from 'react';
 import { standalone_routes } from '@/components/shared';
 import {
     LegacyCashierIcon as CashierLogo,
+    LegacyChartsIcon as AnalyticsLogo,
+    LegacyDerivIcon as RobotLogo,
     LegacyHomeNewIcon as TradershubLogo,
     LegacyReportsIcon as ReportsLogo,
 } from '@deriv/quill-icons/Legacy';
@@ -86,5 +88,17 @@ export const MenuItems: MenuItemsConfig[] = [
         href: standalone_routes.reports,
         icon: <ReportsLogo iconSize='xs' />,
         label: localize('Reports'),
+    },
+    {
+        as: 'a',
+        href: standalone_routes.free_bots,
+        icon: <RobotLogo iconSize='xs' />,
+        label: localize('Free Bots'),
+    },
+    {
+        as: 'a',
+        href: standalone_routes.analysis_tool,
+        icon: <AnalyticsLogo iconSize='xs' />,
+        label: localize('Analysis Tool'),
     },
 ];

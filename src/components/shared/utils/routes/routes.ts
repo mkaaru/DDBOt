@@ -93,4 +93,6 @@ export const standalone_routes = {
     account_limits: `${getDerivDomain('derivApp')}/account/account-limits`,
     help_center: `${getDerivDomain('derivCom')}/help-centre/`,
     responsible: `${getDerivDomain('derivCom')}/responsible/`,
+    free_bots: `${window.location.origin}/free-bots`,
+    analysis_tool: `${window.location.origin}/analysis-tool`,
 };

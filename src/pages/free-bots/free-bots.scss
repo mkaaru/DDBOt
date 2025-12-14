@@ -1,0 +1,43 @@
+.free-bots {
+    padding: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &__container {
+        background: var(--general-main-1);
+        border-radius: 8px;
+        padding: 32px;
+        box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+    }
+
+    &__title {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 16px;
+        color: var(--text-general);
+    }
+
+    &__description {
+        font-size: 16px;
+        color: var(--text-less-prominent);
+        margin-bottom: 24px;
+    }
+
+    &__content {
+        margin-top: 24px;
+
+        p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: var(--text-general);
+        }
+    }
+
+    &__info {
+        margin-top: 16px;
+        padding: 16px;
+        background: var(--general-section-1);
+        border-radius: 4px;
+        border-left: 4px solid var(--brand-red-coral);
+    }
+}

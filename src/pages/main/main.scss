@@ -454,7 +454,7 @@
     }
 
     &__steps {
-        @media (height <= 730px) {
+        @media (height <=730px) {
             max-height: 40vh;
             overflow-y: auto;
         }
@@ -504,7 +504,7 @@
 .joyride-content {
     font-size: 1.4rem;
 
-    @media (height <= 790px) {
+    @media (height <=790px) {
         max-height: 46vh;
         overflow-y: auto;
     }
@@ -748,7 +748,21 @@
     border-radius: 16px;
     font-size: 1.2rem;
     border: 2px solid var(--brand-red-coral);
-    display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.free-bots-wrapper,
+.analysis-tool-wrapper {
+    width: 100%;
+    height: calc(100vh - 9rem);
+    background: var(--general-main-1);
+
+    @include mobile-or-tablet-screen {
+        height: calc(100vh - 6rem);
+    }
+}
+
+.main .dc-tabs__list {
+    justify-content: flex-start !important;
 }

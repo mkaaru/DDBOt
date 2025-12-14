@@ -16,6 +16,8 @@ import './app-root.scss';
 
 const Layout = lazy(() => import('../components/layout'));
 const AppRoot = lazy(() => import('./app-root'));
+const FreeBots = lazy(() => import('../pages/free-bots'));
+const AnalysisTool = lazy(() => import('../pages/analysis-tool'));
 
 const { TRANSLATIONS_CDN_URL, R2_PROJECT_NAME, CROWDIN_BRANCH_NAME } = process.env;
 const i18nInstance = initializeI18n({
@@ -55,6 +57,8 @@ const router = createBrowserRouter(
             <Route index element={<AppRoot />} />
             <Route path='endpoint' element={<Endpoint />} />
             <Route path='callback' element={<CallbackPage />} />
+            <Route path='free-bots' element={<FreeBots />} />
+            <Route path='analysis-tool' element={<AnalysisTool />} />
         </Route>
     )
 );
